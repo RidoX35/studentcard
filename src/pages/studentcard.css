@@ -30,13 +30,14 @@ body {
   padding: 8px 4px 1px;
   border-bottom: 1px solid #e6e7ea;
   margin: -8px -6px 10px; /* remonte un peu pour coller au bord interne de .card */
+  background: #efefef;
 }
 
 .burger {
   width: 36px;
   height: 36px;
   border: 1px solid #e5e7eb;
-  background: #ffffff;
+  background: #efefef;
   border-radius: 8px;
   display: grid;
   place-items: center;
@@ -93,7 +94,7 @@ body {
   background: #fff;
   border: 1px solid #e6e7ea;
   box-shadow: 0 12px 36px rgba(0,0,0,.08);
-  padding: 20px;          /* marge interne */
+  padding: 5px 20px 20px 20px;          /* marge interne */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -131,12 +132,12 @@ body {
 .barcode-text { margin-top: 3px; font-size: 17px; letter-spacing: 0.15em; }
 
 /* Infos (gauche) */
-.info-block { margin-top: 35px; text-align: left; padding-left: 0px; }
-.info-line { font-size: 16.5px; line-height: 2; color: #1f2937; }
+.info-block { margin-top: 25px; text-align: left; padding-left: 0px; }
+.info-line { font-size: 14.5px; line-height: 2; color: #1f2937; }
 .info-line.strong { font-weight: 600; }
 
 /* Horloge */
-.clock { margin-top: 40px; text-align: center; font-size: 22px; font-weight: 600; color: #0d7a5c; }
+.clock { margin-top: 25px; text-align: center; font-size: 20px; font-weight: 600; color: #11916d; }
 
 /* Retour */
 .back-link { margin-top: 14px; text-align: center; }
