@@ -1,0 +1,144 @@
+/* Base */
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: #f5f6f7;
+  font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #0f172a;
+}
+
+/* Wrapper centré type mobile */
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 16px 12px 28px;
+  background:
+    radial-gradient(1200px 600px at 75% 90%, rgba(0,0,0,0.03), transparent 60%),
+    #f5f6f7;
+}
+
+/********************************************/
+
+/* ===== Header (burger + image rectangle) ===== */
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 4px 1px;
+  border-bottom: 1px solid #e6e7ea;
+  margin: -8px -6px 10px; /* remonte un peu pour coller au bord interne de .card */
+}
+
+.burger {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+.burger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #0f172a;
+  margin: 2.5px 0;
+}
+
+/* Slot central pour l'image en rectangle */
+.brand-slot {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+}
+.brand-slot img {
+  height: 50px;             /* ajuste si besoin */
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Placeholder si pas d'image fournie */
+.brand-placeholder {
+  height: 34px;
+  width: 240px;             /* rectangle visible */
+  background: #e6f4ee;      /* vert très pâle */
+  border: 1px solid #cfe7de;
+  color: #0d7a5c;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+
+/* Espace à droite (symétrie avec le burger) */
+.header-right-space {
+  width: 36px;
+  height: 36px;
+}
+/********************************************/
+
+/* Carte (coins droits) */
+.card {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;      /* occupe toute la hauteur */
+  background: #fff;
+  border: 1px solid #e6e7ea;
+  box-shadow: 0 12px 36px rgba(0,0,0,.08);
+  padding: 20px;          /* marge interne */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Nom (gauche, non gras) */
+.student-name {
+  margin: 6px 2px 14px 2px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #0f172a;
+  text-align: left;
+}
+
+/* Photo */
+.photo-row { display: flex; justify-content: center; margin-bottom: 40px; }
+.photo-container {
+  width: 176px;   /* 44 × 4 */
+  height: 240px;  /* 60 × 4 */
+  background: #e5e7eb;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,.10);
+}
+.photo-img { width: 100%; height: 100%; object-fit: cover; }
+.photo-placeholder { width: 100%; height: 100%; background: #d1d5db; }
+
+/* Code-barres */
+.barcode-container { margin: 12px 0 6px 0; padding: 0 4px; text-align: center; }
+.barcode-svg {
+  width: 100%;
+  height: 140px;             /* proche de la capture */
+  display: block;
+  background: #fff;
+}
+.barcode-text { margin-top: 3px; font-size: 17px; letter-spacing: 0.15em; }
+
+/* Infos (gauche) */
+.info-block { margin-top: 35px; text-align: left; padding-left: 0px; }
+.info-line { font-size: 16.5px; line-height: 2; color: #1f2937; }
+.info-line.strong { font-weight: 600; }
+
+/* Horloge */
+.clock { margin-top: 40px; text-align: center; font-size: 22px; font-weight: 600; color: #0d7a5c; }
+
+/* Retour */
+.back-link { margin-top: 14px; text-align: center; }
+.back-link a { color: #0a58ca; text-decoration: none; }
+.back-link a:hover { text-decoration: underline; }
