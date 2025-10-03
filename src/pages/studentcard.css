@@ -112,8 +112,8 @@ body {
 /* Photo */
 .photo-row { display: flex; justify-content: center; margin-bottom: 40px; }
 .photo-container {
-  width: 176px;   /* 44 × 4 */
-  height: 240px;  /* 60 × 4 */
+  width: 170px;   /* 44 × 4 */
+  height: 215px;  /* 60 × 4 */
   background: #e5e7eb;
   overflow: hidden;
   box-shadow: 0 8px 18px rgba(0,0,0,.10);

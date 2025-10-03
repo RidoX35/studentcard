@@ -1,7 +1,9 @@
 import { useMemo, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./studentcard.css";
+import photoMalo from "../assets/photomalo.jpg";
 const HEADER_IMAGE = "/header.jpeg";
+
 
 /* ---- Faux code-barres (visuel) ---- */
 function FakeBarcode({ value = "202130305" }) {
@@ -90,7 +92,7 @@ export default function StudentCardPage() {
     session: "A2025 (Expire le 2025-12-19)",
     id: "202130305",
     estId: "LECM0707803",
-    photoUrl: "", // mets l'URL de ta photo si tu en as une
+    photoUrl: photoMalo, // mets l'URL de ta photo si tu en as une
   });
 
   return (
