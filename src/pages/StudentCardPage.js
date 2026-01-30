@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import "./studentcard.css";
 import photoMalo from "../assets/photomalo.jpg";
 const HEADER_IMAGE = "/header.jpeg";
