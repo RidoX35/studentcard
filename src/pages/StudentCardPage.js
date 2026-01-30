@@ -89,7 +89,7 @@ export default function StudentCardPage() {
     name: "Malo Lecorvaisier",
     program: "TECHNIQUES DE L'INFORMATIQUE",
     cycle: "Éducation régulière",
-    session: "A2025 (Expire le 2025-12-19)",
+    session: "H2026 (Expire le 2026-05-22)",
     id: "202130305",
     estId: "LECM0707803",
     photoUrl: photoMalo, // mets l'URL de ta photo si tu en as une
